@@ -1,5 +1,4 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -7,41 +6,27 @@
     <Toolbar
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#3F51B5"
-        android:titleTextColor="#FFFFFF"
-        android:elevation="4dp" />
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="List"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </Toolbar>
 
 
 
-    <!--<com.marvell.zoezhu.birthmanager.Topbar-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="40dp"-->
-        <!--custom:title="My List"-->
-        <!--custom:titleTextSize="10sp"-->
-        <!--custom:titleColor="#FFFFFF"-->
-        <!--custom:leftText="menu"-->
-        <!--custom:leftBackground="#FF4081"-->
-        <!--custom:leftTextColor="#FFFFFF"-->
-        <!--custom:rightText="add"-->
-        <!--custom:rightBackground="#FF4081"-->
-        <!--custom:rightTextColor="#FFFFFF"-->
 
-
-        <!--></com.marvell.zoezhu.birthmanager.Topbar>-->
-    <!--<Button-->
-        <!--android:id="@+id/create_database"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Create database"-->
-        <!--/>-->
-
-    <!--<Button-->
-        <!--android:id="@+id/add_data"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Add data"-->
-        <!--/>-->
-
+    <ListView
+        android:id="@+id/birthlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+    </ListView>
 
 </RelativeLayout>

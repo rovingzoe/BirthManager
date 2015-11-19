@@ -14,7 +14,9 @@ public class BirthDatabaseHelper extends SQLiteOpenHelper{
     public static final String CREATE_BIRTHLIST = "create table birthlist ("
             + "id integer primary key autoincrement, "
             + "name text, "
-            + "birthday date)";
+            + "birthyear integer,"
+            + "birthmonth integer,"
+            + "birthday integer)";
     Context mContext;
     public BirthDatabaseHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
